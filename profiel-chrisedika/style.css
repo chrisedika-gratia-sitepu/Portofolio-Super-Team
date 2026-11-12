@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background-utama: #090d16;
+    --background-sekunder: #111827;
+    --aksen-utama: #38bdf8;
+    --aksen-tersier: #a855f7;
+    --teks-utama: #f8fafc;
+    --teks-sekunder: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-utama);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.nama-hobi-tech {
+    color: var(--teks-utama);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5 px;
+}
+
+.nama-hobi-tech h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--teks-utama);
+    margin-bottom: 30px;
+}
+
+
+.nama-hobi-tech h1 span {
+    background: linear-gradient(to right,
+            var(--aksen-utama),
+            var(--aksen-tersier));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nama-hobi-tech p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--teks-sekunder);
+}
+
+.nama-hobi-tech .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.nama-hobi-tech h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--teks-utama);
+    margin-bottom: 10px;
+}
+
+.about-me a {
+    pointer-events: none;
+    cursor: default;
+}
+
+.cerita-aktivitas {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.cerita-aktivitas h2 {
+    font-size: 24px;
+    color: var(--teks-utama);
+    display: flex;
+    justify-content: center;
+}
+
+
+.cerita-aktivitas .foto-teks img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.foto-teks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: var(--teks-utama);
+}
+
+.cerita-button {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    align-self: flex-end;
+    background: linear-gradient(135deg,
+            #38bdf8,
+            #6366f1,
+            #a855f7);
+    color: var(--teks-utama);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.5),
+        0 0 20px rgba(168, 85, 247, 0.3);
+}
