@@ -1,11 +1,85 @@
-.gambar_1{
+.gambar_1 {
     width: 600px;
 }
 
-.gambar_2{
+.gambar_2 {
     width: 400px;
 }
 
-.tahap_1{
+.tahap_1 {
     margin-bottom: 60px;
+}
+
+html[data-theme="dark"] {
+    --dm-bg: #14171c;
+    --dm-surface: #1e232b;
+    --dm-text: #e6e9ee;
+    --dm-muted: #a3acb9;
+}
+
+html[data-theme="dark"] body {
+    background: var(--dm-bg);
+    color: var(--dm-text);
+}
+
+html[data-theme="h3"] {
+    color: var(--dm-text);
+}
+
+html[data-theme="p"] {
+    color: var(--dm-muted);
+}
+
+html[data-theme="dark"] img {
+    filter: brightness(0.9);
+}
+
+/* transisi halus */
+html.dm-animate,
+html.dm-animate body,
+html.dm-animate div,
+html.dm-animate h3,
+html.dm-animate p {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#dm-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #c9ced6;
+    background: #ffffff;
+    color: #222;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dm-toggle:hover {
+  transform: scale(1.08);
+}
+
+#dm-toggle:focus-visible {
+  outline: 3px solid #4c9aff;
+  outline-offset: 2px;
+}
+
+html[data-theme="dark"] #dm-toggle {
+  background: #2a3039;
+  border-color: #475063;
+  color: #ffd866;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.dm-animate,
+  html.dm-animate * {
+    transition: none !important;
+  }
 }
