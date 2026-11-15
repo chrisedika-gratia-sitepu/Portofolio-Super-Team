@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background-utama: #090d16;
+    --background-sekunder: #111827;
+    --aksen-utama: #38bdf8;
+    --aksen-tersier: #a855f7;
+    --teks-utama: #f8fafc;
+    --teks-sekunder: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.profil-team {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid black;
+    padding: 20px;
+    background-color: var(--background-sekunder);
+    color: var(--teks-utama);
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.porto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.porto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+button {
+    width: 100px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(135deg,
+            #38bdf8,
+            #6366f1,
+            #a855f7);
+    color: var(--teks-utama);
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.5),
+        0 0 20px rgba(168, 85, 247, 0.3);
+}
